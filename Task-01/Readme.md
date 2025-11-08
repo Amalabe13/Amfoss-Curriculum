@@ -92,7 +92,63 @@ to correct the typo in file.txt, then **add**.
 to edit the message.  
 **git rebase --continue:**  
 move on to next commit in sequence.  
-
+# commit-lost
+**git reflog:**  
+helps to see and recover past work.  
+Here we can see the reflog reference(here HEAD@{1}).  
+**git reset --hard HEAD@{1}**  
+we can see HEAD@{n} from reflog.  
+# split-commit
+**git reset HEAD~1:**  
+to only remove the commit, but the changes on the work remains same.  
+then, add **add first.txt** and **commit**.  
+then, add **add second.txt** and **commit**.  
+# too-many-commits
+**git rebase -i HEAD~2:**  
+unstage only the specific one.  
+edit will open, and change second commit from pick to squash.  
+# executable
+**chmod +x script.sh:**  
++x to make the file executable.  
+Then, **add** and **commit**.  
+# pick-your-features
+**git add -p file.txt:**  
+to stage parts of changes.
+Then **commit** and **add work.txt and file.txt.  
+# pick-your-features
+**git cherry-pick feature-a**  
+**git cherry-pick feature-a**  
+**git cherry-pick feature-a**  
+to move the current branch forward.  
+then, a conflict occurs in program.txt, resolve conflict.  
+then, **add** program.txt  
+**git cherry-pick --continue:**  
+to continue the cherry-pick.  
+# rebase-complex
+**git rebase issue-555 --onto your-master:**  
+git takes commits in  issue-555 branch on top of your-master branch.  
+# invalid-order
+**git rebase -i HEAD~2:**  
+to move the second commit up.  
+then, an editor appears , change the order between commits.  
+# find-swearwords
+**git log -Sshit:**  
+-S is for search for changes that add or remove a string.  
+**git rebase -i xxxxxxx^:**  
+Open words.txt and list.txt then **add** and **committ**   
+**git rebase --continue:**   
+move forward after edit.  
+# find-bug
+**git bisect:**  
+find commit that introduced a bug.  
+**git bisect bad HEAD:**  
+current commit contains bug.  
+**git bisect good 1.0:**  
+bug is not there.  
+**git bisect run sh -c "openssl enc -base64 -A -d < home-screen-text.txt | grep -v jackass":**  
+git bisect run will automatically test each commit by the command we give.  
+openssl enc -base64 -A -d < home-screen-text.txt , turns encoded file into readable format.  
+grep -v jackass , grep is to search the word, -v means to look for lines without the word.  
 
 
 
