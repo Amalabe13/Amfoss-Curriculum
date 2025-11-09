@@ -139,8 +139,8 @@ Then **commit** and **add work.txt and file.txt.
 # Exercise-19   pick-your-features
 **COMMANDS USED**  
 **git cherry-pick feature-a**  
-**git cherry-pick feature-a**  
-**git cherry-pick feature-a**  
+**git cherry-pick feature-b**  
+**git cherry-pick feature-c**  
 to move the current branch forward.  
 then, a conflict occurs in program.txt, resolve conflict.  
 then, **add** program.txt  
