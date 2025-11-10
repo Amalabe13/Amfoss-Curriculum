@@ -124,7 +124,7 @@ then, add **add second.txt** and **commit**.
 **COMMANDS USED**  
 **git rebase -i HEAD~2:**  
 unstage only the specific one.  
-edit will open, and change second commit from pick to squash.  
+editor will open, and change second commit from pick to squash.  
 # Exercise-17   executable
 **COMMANDS USED**  
 **chmod +x script.sh:**  
