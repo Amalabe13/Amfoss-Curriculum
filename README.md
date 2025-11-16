@@ -4,8 +4,8 @@ Through this repository, I share my journey of completing amFOSS curriculum task
 |----|--------|------|
 |Task-01|Git|Completed|
 |Task-02|SRS|Completed|
-|Task-03|Wireframe| |
-|Task-04|Design| |
+|Task-03|Wireframe|Completed |
+|Task-04|Design|Completed|
 |Task-05|Frontend Development| |
 |Task-06|Backend Development| |
 |Task-07|Mobile App Development| |
